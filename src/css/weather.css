@@ -395,10 +395,10 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  padding: 12px 16px;
+  padding: 12px 10px;
   border-radius: var(--border-radius-md);
   background: var(--slate-50);
-  min-width: 70px;
+  min-width: 78px;
   transition: all var(--transition-fast);
 }
 
@@ -412,9 +412,10 @@
 }
 
 .hourly-time {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
   color: var(--slate-500);
+  white-space: nowrap;
 }
 
 .hourly-item.now .hourly-time {
@@ -679,11 +680,20 @@
 
 @media (max-width: 480px) {
   .weather-details-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
   
   .weather-detail-card.sunrise-sunset {
-    grid-column: span 1;
+    grid-column: span 2;
+  }
+  
+  .weather-detail-card {
+    padding: 14px 10px;
+  }
+
+  .weather-detail-value {
+    font-size: 20px;
   }
   
   .forecast-list {

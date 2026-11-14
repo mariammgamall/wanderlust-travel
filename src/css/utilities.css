@@ -86,24 +86,61 @@
   }
   
   .stats-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .stat-card {
+    padding: 16px 12px;
+    gap: 12px;
+  }
+
+  .stat-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
+
+  .stat-info h3 {
+    font-size: 20px;
+  }
+
+  .stat-info p {
+    font-size: 11px;
   }
   
   .quick-actions-grid {
     grid-template-columns: repeat(2, 1fr);
   }
   
+  .dashboard-search-form {
+    padding: 20px 16px;
+  }
+
   .search-form-row {
     flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
   }
   
+  .search-form-row .form-group,
   .search-form-row .form-group.flex-1,
-  .search-form-row .form-group.flex-2 {
-    flex: 1;
-  }
-  
+  .search-form-row .form-group.flex-2,
   .search-form-row .form-group.search-btn-group {
+    width: 100%;
     flex: none;
+  }
+
+  .search-form-row .form-group label {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .search-form-row .form-select,
+  .search-form-row .custom-select-wrapper,
+  .search-form-row .simple-select-wrapper {
     width: 100%;
   }
   
@@ -123,6 +160,8 @@
   .view-header-card {
     flex-direction: column;
     text-align: center;
+    padding: 24px 16px;
+    gap: 16px;
   }
   
   .view-header-form {
@@ -147,11 +186,110 @@
   .plans-filter-bar {
     overflow-x: auto;
     flex-wrap: nowrap;
+    gap: 8px;
     padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .plans-filter-bar::-webkit-scrollbar {
+    display: none;
   }
   
   .plan-filter {
     white-space: nowrap;
+    padding: 8px 14px;
+    font-size: 12px;
+    flex-shrink: 0;
+  }
+
+  .empty-state {
+    padding: 36px 16px;
+  }
+
+  .empty-state .empty-icon {
+    width: 64px;
+    height: 64px;
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .empty-state h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .empty-state p {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .plans-grid:has(.empty-state),
+  .holidays-content:has(.empty-state),
+  .events-grid-layout:has(.empty-state),
+  .weather-layout:has(.empty-state),
+  .lw-grid:has(.empty-state),
+  .sun-times-layout:has(.empty-state) {
+    min-height: auto;
+  }
+
+  .holidays-content,
+  .events-grid-layout,
+  .lw-grid,
+  .plans-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .currency-converter-card {
+    padding: 24px 16px;
+    width: 100%;
+  }
+
+  .currency-amount-input {
+    max-width: 100%;
+  }
+
+  .currency-selects {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    width: 100%;
+  }
+  
+  .currency-select-group {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .currency-select-group label {
+    text-align: left;
+  }
+
+  .currency-select-group .form-select {
+    width: 100%;
+    text-align: left;
+  }
+
+  .currency-swap-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 4px 0;
+  }
+  
+  .currency-swap-btn {
+    margin: 0 auto;
+    transform: rotate(90deg);
+  }
+  
+  .currency-swap-btn:hover {
+    transform: rotate(270deg);
+  }
+
+  .btn-convert {
+    width: 100%;
+    justify-content: center;
   }
   
   .header-datetime {
