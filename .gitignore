@@ -1,0 +1,13 @@
+# Environment Variables (Keep API keys secret!)
+.env
+.env.local
+.env.*.local
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Node modules (if ever installed)
+node_modules/
+npm-debug.log*
