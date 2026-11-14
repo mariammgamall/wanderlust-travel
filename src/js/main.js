@@ -813,7 +813,7 @@ class App {
     // Start exploring button in empty state
     document.addEventListener('click', (e) => {
       if (e.target.closest('#start-exploring-btn')) {
-        this.router.navigateTo('holidays');
+        this.router.navigateTo('dashboard');
       }
     });
 
@@ -2547,7 +2547,7 @@ class App {
           <div class="empty-icon"><i class="fa-solid fa-heart-crack"></i></div>
           <h3>No Saved Plans Yet</h3>
           <p>Start exploring and save holidays, events, or long weekends you like!</p>
-          <button class="btn-primary" id="start-exploring-btn">
+          <button class="btn-primary" id="start-exploring-btn" data-view="dashboard">
             <i class="fa-solid fa-compass"></i> Start Exploring
           </button>
         </div>
