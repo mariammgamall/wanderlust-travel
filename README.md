@@ -2,12 +2,6 @@
 
 A modern, interactive travel planning Single Page Application (SPA) built with pure **Vanilla JavaScript**, **HTML5**, and **CSS3** using **Object-Oriented Programming (OOP)**.
 
-Developed for **Route IT Training Center - Frontend Diploma (C49) Exam 2**.
-
-[![GitHub Repository](https://img.shields.io/badge/GitHub-mariammgamall%2Fwanderlust--travel-181717?logo=github)](https://github.com/mariammgamall/wanderlust-travel)
-[![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla%20ES6+-F7DF1E?logo=javascript&logoColor=black)](#)
-[![Vercel Ready](https://img.shields.io/badge/Vercel-Compatible-black?logo=vercel)](#)
-
 ---
 
 ## ✨ Features
@@ -137,10 +131,3 @@ wanderlust-travel/
 
 ---
 
-## 🎓 Academic Information
-
-- **Developer**: Mariam Gamal ([@mariammgamall](https://github.com/mariammgamall))
-- **Repository**: [https://github.com/mariammgamall/wanderlust-travel](https://github.com/mariammgamall/wanderlust-travel)
-- **Institution**: Route IT Training Center
-- **Course**: Frontend Diploma (Cycle 49)
-- **Exam**: Exam 2 - JavaScript & Web APIs
